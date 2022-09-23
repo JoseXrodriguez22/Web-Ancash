@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(190, 187, 187, 0.842);
+    border-radius: 10px;
+}
+
+
+/* -----------------------
+#  === RECICLE =====
+--------------------------- */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cold {
+    padding-top: 140px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+a {
+    transition: all .4s;
+}
+
+a:hover {
+    color: rgb(0, 152, 199);
+}
+
+/* -----------------------
+#=== NAV =====
+--------------------------- */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    transition: all .3s;
+}
+
+nav.active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+    padding-bottom: 10px;
+
+}
+
+nav ul li {
+    margin-right: 6rem;
+
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+
+/* -----------------------
+#=== HERO =====
+--------------------------- */
+
+section#slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+div#content-images-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+h1#slider-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15em;
+    background: linear-gradient(0deg, rgba(166, 166, 166, 1) 0%, rgba(255, 255, 255, 1) 32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section#content {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+div.text-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+/* -----------------------
+#=== PICTURE =====
+--------------------------- */
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.img__picture_hover {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(36, 35, 37, 0.414);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: all .4s;
+    color: white;
+}
+
+.img__picture:hover .img__picture_hover {
+    transform: translateY(0);
+}
+
+.img__picture {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.395);
+}
+
+.img__picture img {
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.img__picture:hover img {
+    transform: scale(1.2);
+}
+
+.title h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* -----------------------
+#=== TOURISM =====
+--------------------------- */
+.tourism {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.title__tourism {
+    width: 40%;
+}
+
+.title__tourism h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.paragraph__tourism {
+    width: 60%;
+}
+
+.paragraph__tourism button {
+    padding: 15px 35px;
+    border: 1px solid rgb(0, 152, 199);
+    background-color: transparent;
+    color: rgb(0, 152, 199);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s;
+    margin-top: 3rem;
+}
+
+.paragraph__tourism button:hover {
+    background-color: rgb(0, 152, 199);
+    color: #fff;
+}
+
+/* -----------------------
+#=== FOOTER =====
+--------------------------- */
+footer {
+    width: 100%;
+    background-image: url(../img/background-footer.svg);
+    margin-top: 8rem;
+    background-size: cover;
+    height: 70%;
+}
+
+.contain__footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 12rem;
+}
+
+.logo__footer img {
+    width: 100px;
+}
+
+.text__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links__footer p {
+    cursor: pointer;
+    transition: all .4s;
+    margin-top: 0.5rem;
+}
+
+.links__footer p:hover {
+    color: rgb(0, 152, 199);
+}
+
+.links__social {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.icons__social i {
+    font-size: 23px;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.icons__social i:hover {
+    color: rgb(0, 152, 199);
+}
